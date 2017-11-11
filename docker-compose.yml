@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+   main:
+     image: igossoudarev/timelogger
+     ports:
+       - "80:4321"
+     volumes:
+       - /sites/data/:/data
+     restart: always
