@@ -16,9 +16,11 @@ let t = dateFns.format(new Date(),'DD-MM-YYYY--HH-mm-ss');
 
 тогда если создать его
 
+https://hub.docker.com/r/igossoudarev/timelogger/
+
 ```sh
 
-docker run -p 4321:4321 -v "$PWD":/data -itd timelogger
+docker run -p 4321:4321 -v "$PWD":/data -itd igossoudarev/timelogger
 
 ```
 
