@@ -20,7 +20,7 @@ https://hub.docker.com/r/igossoudarev/timelogger/
 
 ```sh
 
-docker run -p 4321:4321 -v "$PWD":/data -itd igossoudarev/timelogger
+docker run -p 80:4321 -v "$PWD":/data -itd igossoudarev/timelogger
 
 ```
 
@@ -28,6 +28,9 @@ docker run -p 4321:4321 -v "$PWD":/data -itd igossoudarev/timelogger
 
 и он будет писать файлы в неё, после чего их можно будет увидеть уже при остановленном контейнере.
 
+Аналогичного эффекта можно достичь с помощью docker-compose
+
+см. файл docker-compose.yml
 
 
 
